@@ -81,13 +81,14 @@ body {
 .score {
   color: hsl(217, 12%, 63%);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  position: relative;
 }
 
-.score > p {
+.score::before {
+  content: " ";
   padding-top: 5px;
 }
 
